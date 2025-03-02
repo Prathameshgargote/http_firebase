@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-header">
+        <h1>{{singlepostObj.title}} </h1>
+    </div>
+    <div class="card-body">
+        <p>{{singlepostObj.content}}</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <button routerLink="edit" class="btn btn-primary">edit</button>
+
+        <button (click)="onremove()"  class="btn btn-danger">Remove</button>
+
+    </div>
+</div>

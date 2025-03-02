@@ -1,0 +1,8 @@
+<div class="row ">
+     <div class="col-12 text-right mb-4">
+        <button  class="btn btn-outline-primary" routerLink="add">Add Post</button>
+     </div>
+    <div class="col-md-4 mb-4" *ngFor="let post of postArr">
+        <app-post-card [postobj]="post"></app-post-card>
+    </div>
+</div>
